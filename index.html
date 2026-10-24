@@ -800,10 +800,19 @@
     })();
 
     const BOX_PHOTOS = [
-      { img: 'BIJU/IMG-20261023-WA0003.jpg', text: 'A little moment we treasure 📸' },
-      { img: 'BIJU/IMG-20261023-WA0004.jpg', text: 'Look how far we have come 💫' },
-      { img: 'BIJU/IMG-20261024-WA0001.jpg', text: 'One more memory 🥹' }
-    ];
+  {
+    img: 'IMG-20261023-WA0003.jpg',
+    text: 'A little moment we treasure 📸'
+  },
+  {
+    img: 'IMG-20261023-WA0004.jpg',
+    text: 'Look how far we have come 💫'
+  },
+  {
+    img: 'IMG-20261024-WA0001.jpg',
+    text: 'One more memory 🥹'
+  }
+];
     function unlock(i) { const g = $(`.gift[data-box="${i}"]`); if (g) g.classList.remove('locked'); }
     $$('.gift').forEach(g => {
       g.addEventListener('click', () => {
